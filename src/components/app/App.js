@@ -1,11 +1,13 @@
-import logo from '../../logo.svg';
+// import logo from '../../logo.svg';
 import './App.css';
-import Heder from '../header/Header'
+import Heder from '.././header/Header'
+import Main from '.././main/Main'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Heder/>
         <a
@@ -16,7 +18,9 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      <Heder/>
+      <Main/>
     </div>
   );
 }
