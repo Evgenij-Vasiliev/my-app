@@ -27,8 +27,7 @@
 .aside a {
     color: #000;
     font-size: 18px;
-    text-transform: uppercase;
-    /* font-weight: 400; */
+    text-transform: uppercase;   
     text-decoration: none;                
 }
 

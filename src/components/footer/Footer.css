@@ -1,0 +1,16 @@
+.footer {
+    background-color: rgb(165, 153, 153);    
+    font-size: 18px;    
+    text-transform: uppercase;
+    display: flex; 
+    /* flex-direction: row;      */
+    /* align-items: center;     */
+    flex-wrap: wrap;         
+       
+}
+
+.footer .text  {
+    display: flex;         
+    justify-content: space-around;
+    flex: 0 0 calc(100% / 3);
+}
