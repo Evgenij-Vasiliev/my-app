@@ -1,5 +1,5 @@
 .main {
-    background-color: #51ede4;    
+    background-color: #51ede4;        
     display: flex;
     padding: 20px; 
     flex: 1 0 auto; 
@@ -17,4 +17,8 @@
 .heading {
     text-align: center;
     font-size: 18px;
+}
+
+.heading2 {
+    text-align: center;
 }

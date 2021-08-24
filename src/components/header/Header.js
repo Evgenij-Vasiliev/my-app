@@ -2,10 +2,9 @@ import './Header.css'
 import logo from '../../logo.svg';
 
 function Heder() {
-    return <div>
+    return <>
         <header className="header">
-        <img src={logo} className="App-logo" alt="logo" />
-        {/* <div className="logo"><a href="#"><img src="./1298712_logo_sketch_icon.png" alt="logo"></a></div> */}
+        <img src={logo} className="App-logo" alt="logo" />        
         <nav className="menu">
             <ul>
                 <li><a href="/">Домашняя</a></li>
@@ -15,7 +14,7 @@ function Heder() {
             </ul>
         </nav>        
     </header>
-    </div>
+    </>
 }
 
 export default Heder;

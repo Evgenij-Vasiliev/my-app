@@ -2,7 +2,7 @@ import './Sidebar.css'
 
 
 function Sidebar() {
-    return <div>        
+    return (        
         <aside className="aside">
             <ul>
                 <li><a href="/">Мой профиль</a></li>
@@ -11,7 +11,7 @@ function Sidebar() {
                 <li><a href="./contact.html">Мои контакты</a></li>
             </ul>
         </aside>        
-    </div>        
+    );        
 }
 
 export default Sidebar;

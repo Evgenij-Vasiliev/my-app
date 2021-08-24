@@ -1,6 +1,4 @@
-.aside {
-    /* width: 150px; */
-    min-height: 100%;
+.aside {    
     background-color:blanchedalmond;
     display: flex;
     flex: 0 0 150px;    

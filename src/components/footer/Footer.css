@@ -2,15 +2,19 @@
     background-color: rgb(165, 153, 153);    
     font-size: 18px;    
     text-transform: uppercase;
-    display: flex; 
-    /* flex-direction: row;      */
-    /* align-items: center;     */
-    flex-wrap: wrap;         
+    display: flex;    
+    flex-wrap: wrap;
+    padding-left: 40px;         
        
 }
 
 .footer .text  {
-    display: flex;         
-    justify-content: space-around;
+    display: flex;       
     flex: 0 0 calc(100% / 3);
+}
+
+@media screen and (min-width: 768px) {
+    .footer .text {
+        justify-content: space-around;              
+    }    
 }

@@ -1,7 +1,7 @@
 import './Footer.css'
 
 function Footer() {
-    return <div>
+    return (
         <footer className="footer">
         <div className="text"><a href="/">Текст1</a></div>        
         <div className="text"><a href="/">Текст2</a></div>        
@@ -10,7 +10,7 @@ function Footer() {
         <div className="text"><a href="/">Текст5</a></div>        
         <div className="text"><a href="/">Текст6</a></div>        
     </footer> 
-    </div>
+    );
 }
 
 export default Footer;
