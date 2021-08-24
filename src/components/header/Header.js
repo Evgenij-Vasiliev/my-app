@@ -1,11 +1,11 @@
-import './Header.css'
+import styles from'./Header.module.css'
 import logo from '../../logo.svg';
 
 function Heder() {
     return <>
-        <header className="header">
-        <img src={logo} className="App-logo" alt="logo" />        
-        <nav className="menu">
+        <header className={styles.header}>
+        <img src={logo} className={styles["App-logo"]} alt="logo" />        
+        <nav className={styles.menu}>
             <ul>
                 <li><a href="/">Домашняя</a></li>
                 <li><a href="/" >О нас</a></li>
