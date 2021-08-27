@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import styles from  './Content.module.css'
 
-
 function Content() {
     // const [turned, setTurned] = useState(true);
     console.log('Content is running');
@@ -29,8 +28,8 @@ function Content() {
     );
     }
 
-    function onClick() {
-        console.log('on click');
+    function onClick($event) {
+        console.log($event, 'on click');
         setAmount(amount + 1);
     }
 
@@ -38,8 +37,18 @@ function Content() {
     <div className={styles.content}>
         {seconds}
         {content}
-        <div>Amount: {amount}</div>
+        <div onClick={() => {setAmount(amount -1)}}>Amount: {amount}</div>
         <button onClick={onClick}>Click</button>
+        <button onClick={($event) => {
+            if($event.altKey) {
+                setAmount(0);
+            }else if($event.ctrlKey){
+                setAmount(-10);
+            }else{
+                setAmount(9);
+            }
+
+            }}>Reset</button>
     </div>);      
 }
 
