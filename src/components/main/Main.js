@@ -1,10 +1,10 @@
-import './Main.css'
+import styles from './Main.module.css'
 import Sidebar from './sidebar/Sidebar'
 import Content from './content/Content'
 
 function Main() {
     return (
-        <main className="main">
+        <main className={styles.main}>
         <Sidebar/>              
         <Content/>              
     </main>

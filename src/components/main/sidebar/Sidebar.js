@@ -1,9 +1,9 @@
-import './Sidebar.css'
+import styles from './Sidebar.module.css'
 
 
 function Sidebar() {
     return (        
-        <aside className="aside">
+        <aside className={styles.aside}>
             <ul>
                 <li><a href="/">Мой профиль</a></li>
                 <li><a href="/" >Мои покупки</a></li>

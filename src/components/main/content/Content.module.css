@@ -1,17 +1,15 @@
-.main {
-    background-color: #51ede4;        
-    display: flex;
-    padding: 20px; 
-    flex: 1 0 auto; 
-    padding: 0;    
-}
-
 .content {
     background-color:cornsilk;
     display: flex;
     flex-direction: column;
     flex: 1 0 calc(100% - 150px);
     padding: 20px;
+}
+
+.text2 {
+    color: red;
+    font-style: italic;
+    text-align: center;
 }
 
 .heading {
@@ -21,4 +19,5 @@
 
 .heading2 {
     text-align: center;
+    color: blue;
 }
