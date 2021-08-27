@@ -1,14 +1,23 @@
 import styles from './Sidebar.module.css'
+import Link from '../../link/Link'
 
+const links = [
+    ['/', 'Мой профиль'],
+    ['/', 'Мои покупки'],
+    ['/', 'Мои адреса'],
+    ['./contact', 'Мой контакты'],
+];
 
 function Sidebar() {
+    let linkHtml = links.map((value) => {
+        return <li>
+            <Link url={value[0]} label={value[1]}/>        
+            </li>
+    })
     return (        
         <aside className={styles.aside}>
             <ul>
-                <li><a href="/">Мой профиль</a></li>
-                <li><a href="/" >Мои покупки</a></li>
-                <li><a href="/">Мои адреса</a></li>
-                <li><a href="./contact.html">Мои контакты</a></li>
+                {linkHtml}                
             </ul>
         </aside>        
     );        
