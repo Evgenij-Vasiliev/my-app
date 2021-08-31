@@ -21,3 +21,17 @@
     text-align: center;
     color: blue;
 }
+
+.changeOfState {
+    position: absolute;
+    right: 10px;
+    background-color:rgb(243, 243, 150);
+    width: 100px;
+    border-radius: 50%;
+    color:orangered;
+    font-weight: 700;
+    
+
+} 
+
+   

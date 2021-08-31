@@ -11,17 +11,17 @@ const links = [
 
 
 function Sidebar() {
-    let [newarrey, setNewarrey] = useState([]);
+    let [newArray, setnewArray] = useState([]);
 
-    let linkHtml = links.concat(newarrey).map((value) => {
+    let linkHtml = links.concat(newArray).map((value) => {
         return <li key={value[0]}>
             <Link url={value[0]} label={value[1]}/>        
             </li>
     });
 
     function addNewLink() {
-        let combineArray = newarrey.concat([['/exit','Выход']]);
-        setNewarrey(combineArray);                
+        let combineArray = newArray.concat([['/exit','Выход']]);
+        setnewArray(combineArray);                
     }
     return (        
         <aside className={styles.aside}>
