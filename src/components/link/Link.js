@@ -1,5 +1,6 @@
+import {Link as SoftLink} from 'react-router-dom';
 function Link(props) {
-    return <a href={props.url}>{props.label}</a>
+    return <SoftLink to={props.url}>{props.label}</SoftLink>
 }
 
 export default Link;

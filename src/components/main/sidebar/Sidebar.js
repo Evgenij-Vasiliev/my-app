@@ -1,21 +1,25 @@
 import { useState } from 'react';
 import styles from './Sidebar.module.css'
 import Link from '../../link/Link'
+import { useRouteMatch } from 'react-router';
 
 const links = [
     ['/profile', 'Мой профиль'],
     ['/cart', 'Мои покупки'],
     ['/address', 'Мои адреса'],
-    ['/contact', 'Мой контакты'],
+    ['/contact', 'Мои контакты'],
 ];
 
 
 function Sidebar() {
     let [newArray, setnewArray] = useState([]);
 
+    const match = useRouteMatch();
+    console.log(match);
+
     let linkHtml = links.concat(newArray).map((value) => {
         return <li key={value[0]}>
-            <Link url={value[0]} label={value[1]}/>        
+            <Link url={match.url + value[0]} label={value[1]}/>        
             </li>
     });
 
