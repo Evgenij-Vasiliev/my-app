@@ -1,0 +1,13 @@
+.myProfile {
+    background-color:aquamarine; 
+    padding-left: 20px;   
+}
+
+.myProfile h2 {
+    color: green;
+    text-align: center;
+}
+
+.myProfile p {
+    line-height: 1.5;
+}

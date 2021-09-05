@@ -1,0 +1,9 @@
+.myPurchases {
+    background-color:lightgreen;
+    padding-left: 20px;
+}
+
+.myPurchases h2 {
+    text-align: center;
+    color:rgb(26, 22, 214);
+}

@@ -1,0 +1,13 @@
+.myContact {
+    background-color:yellowgreen;
+    padding-left: 20px;
+}
+
+.myContact h2 {
+    text-align: center;
+    color:tomato;
+}
+
+.myContact p {
+    color:slateblue;
+}
