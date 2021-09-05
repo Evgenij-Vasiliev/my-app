@@ -1,0 +1,12 @@
+.aboutUs {    
+    background-color: antiquewhite;
+    padding-left: 20px;
+}
+
+.aboutUs h2 {
+    text-align: center;
+}
+
+.aboutUs p {
+    line-height: 1.5;
+}

@@ -1,6 +1,7 @@
 import logo from '../../logo.svg';
 import Link from '../link/Link'
 import styles from'./Header.module.css'
+import ProfileButton from'./ProfileButton'
 
 
 const linksHeader = [
@@ -23,7 +24,8 @@ function Heder() {
             <ul>
                 {linkHtml}                
             </ul>
-        </nav>        
+        </nav> 
+        <ProfileButton/>       
     </header>
     </>
 }

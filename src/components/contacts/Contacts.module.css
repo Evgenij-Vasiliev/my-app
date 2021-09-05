@@ -1,0 +1,14 @@
+.ourContacts {
+    background-color:burlywood;
+    padding-left: 20px;
+}
+
+.ourContacts h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.ourContacts p {
+    line-height: 1.5;
+    color:darkblue;    
+}

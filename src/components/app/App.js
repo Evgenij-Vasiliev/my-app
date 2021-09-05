@@ -1,5 +1,5 @@
 // import logo from '../../logo.svg';
-
+import SignUp from '../signup/SignUp';
 import Header from '.././header/Header';
 import Main from '.././main/Main';
 import About from '../about/About';
@@ -16,6 +16,7 @@ function App() {
       <Router>
         <Header/>
         <Switch>                    
+          <Route path="/signup"><SignUp/></Route>
           <Route path="/home"><Main/></Route>
           <Route path="/aboutUs"><About/></Route>          
           <Route path="/resources"><Resources/></Route>
