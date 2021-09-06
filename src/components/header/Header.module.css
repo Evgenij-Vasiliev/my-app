@@ -2,7 +2,7 @@
     background-color: rgb(165, 153, 153);    
     display: flex;
     flex-flow: row;      
-    align-items: center; 
+    align-items: center;   
 }
 
 .menu {

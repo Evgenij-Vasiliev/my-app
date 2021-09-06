@@ -1,6 +1,7 @@
 .myProfile {
     background-color:aquamarine; 
-    padding-left: 20px;   
+    padding-left: 20px;
+    width: 100%;   
 }
 
 .myProfile h2 {

@@ -1,6 +1,7 @@
 .myContact {
-    background-color:yellowgreen;
+    background-color:rgb(206, 240, 138);
     padding-left: 20px;
+    width: 100%;
 }
 
 .myContact h2 {
