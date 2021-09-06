@@ -9,7 +9,7 @@ const linksHeader = [
     ['/aboutUs', 'О нас'],
     ['/resources', 'Ресурсы'],
     ['/contacts', 'Контакты']
-]
+];
 
 function Heder() {
     let linkHtml = linksHeader.map((value) => {
