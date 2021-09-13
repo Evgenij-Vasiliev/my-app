@@ -1,0 +1,12 @@
+.usersAll {
+    background-color:darkcyan;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.usersAll h2 {
+    color:white;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;     
+}
