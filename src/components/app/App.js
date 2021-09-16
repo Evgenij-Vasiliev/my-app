@@ -15,6 +15,7 @@ function App() {
     <div className={styles.App}>
       <Router>
         <Header/>
+        <div className={styles.pageWrapper}>
         <Switch>                    
           <Route path="/signup"><SignUp/></Route>
           <Route path="/home"><Main/></Route>
@@ -22,7 +23,8 @@ function App() {
           <Route path="/resources"><Resources/></Route>
           <Route path="/contacts"><Contacts/></Route>
           <Route path="/"><Main/></Route>
-        </Switch>        
+        </Switch>
+        </div>                
         <Footer/>
       </Router>      
       
