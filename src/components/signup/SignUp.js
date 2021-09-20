@@ -32,7 +32,7 @@ function SignUp() {
                 <input type="password" name="password" placeholder="Введите пароль" onChange={handleControls}/>
             </label>  
             <br/>
-            <input type="submit" value="Создать" />
+            <input  type="submit" value="Создать" />
         </form>         
     </div>;
 }
