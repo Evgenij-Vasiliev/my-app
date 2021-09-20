@@ -13,6 +13,10 @@
   /* flex-direction: column; */
 }
 
+.pageWrapper h2 {
+  text-transform: uppercase;
+}
+
 .pageWrapper > * {
   /* height: 100%; */
   flex: 1 1 auto;
