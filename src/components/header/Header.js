@@ -1,7 +1,8 @@
 import logo from '../../logo.svg';
 import Link from '../link/Link'
 import styles from'./Header.module.css'
-import ProfileButton from'./ProfileButton'
+import ProfileButtonRegistration from'./ProfileButtonRegistration'
+import ProfileButtonAuthorization from'./ProfileButtonAuthorization'
 
 
 const linksHeader = [
@@ -11,7 +12,7 @@ const linksHeader = [
     ['/contacts', 'Контакты']
 ];
 
-function Heder() {
+function Header() {
     let linkHtml = linksHeader.map((value) => {
         return <li key={value[0]}>
         <Link url={value[0]} label={value[1]}/>        
@@ -24,10 +25,11 @@ function Heder() {
             <ul>
                 {linkHtml}                
             </ul>
-        </nav> 
-        <ProfileButton/>       
+        </nav>         
+        <ProfileButtonRegistration/> 
+        <ProfileButtonAuthorization/>              
     </header>
     </>
 }
 
-export default Heder;
+export default Header;

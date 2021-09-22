@@ -1,4 +1,6 @@
-import styles from './SignUp.module.css'
+import styles from './SignUp.module.css';
+import{dbUrl} from '../../config/config'
+
 
 function SignUp() {
 
@@ -8,7 +10,7 @@ function SignUp() {
         console.log('send data', formData);
         $event.preventDefault();
 
-        fetch('http://localhost:3500/users' , {
+        fetch(`http://${dbUrl}/users` , {
             method: 'Post',
             body: JSON.stringify(formData),
             headers: {

@@ -1,6 +1,6 @@
 import Link from '../link/Link';
 
-function ProfileButton() {
+function ProfileButtonRegistration() {
     return <Link url="/SignUp" label="Регистрация"/>
 }
-export default ProfileButton;
+export default ProfileButtonRegistration;

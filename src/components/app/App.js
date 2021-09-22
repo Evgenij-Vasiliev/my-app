@@ -1,5 +1,5 @@
 // import logo from '../../logo.svg';
-import SignUp from '../signup/SignUp';
+import SignUp from '../signUp/SignUp';
 import Header from '.././header/Header';
 import Main from '.././main/Main';
 import Home from '.././home/Home';
