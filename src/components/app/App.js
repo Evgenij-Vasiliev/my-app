@@ -1,5 +1,7 @@
 // import logo from '../../logo.svg';
+import SignIn from '../signIn/SignIn';
 import SignUp from '../signUp/SignUp';
+import Logo from '../header/Logo';
 import Header from '.././header/Header';
 import Main from '.././main/Main';
 import Home from '.././home/Home';
@@ -18,13 +20,14 @@ function App() {
         <Header/>
         <div className={styles.pageWrapper}>
         <Switch>                    
-          <Route path="/signup"><SignUp/></Route>
+          <Route path="/signUp"><SignUp/></Route>
+          <Route path="/signIn"><SignIn/></Route>
           <Route path="/home"><Main/></Route>          
           <Route path="/home"><Home/></Route>          
           <Route path="/aboutUs"><About/></Route>          
           <Route path="/resources"><Resources/></Route>
           <Route path="/contacts"><Contacts/></Route>
-          <Route path="/"><Main/></Route>
+          <Route path="/"><Logo/></Route>
         </Switch>
         </div>                
         <Footer/>

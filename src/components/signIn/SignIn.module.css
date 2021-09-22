@@ -1,5 +1,5 @@
-.SignUp {
-    background-color: rgb(149, 145, 76); 
+.SignIn {
+    background-color: rgb(95, 79, 5); 
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -7,18 +7,18 @@
     justify-content: center;               
 }
 
-.SignUp form {
+.SignIn form {
     font-size: 36px;    
 }
 
-.SignUp form input {    
+.SignIn form input {    
     display: block;
     font-size: 36px;       
-    background-color:yellow;     
+    background-color:yellowgreen;     
 }
 
-.SignUp form input[type=submit] {
-    color:red;
+.SignIn form input[type=submit] {
+    color:blue;
     font-weight: bold;
     margin: 0 auto;
     border-radius: 45%;

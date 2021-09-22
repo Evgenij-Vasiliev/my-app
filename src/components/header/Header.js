@@ -1,8 +1,9 @@
 import logo from '../../logo.svg';
-import Link from '../link/Link'
-import styles from'./Header.module.css'
-import ProfileButtonRegistration from'./ProfileButtonRegistration'
-import ProfileButtonAuthorization from'./ProfileButtonAuthorization'
+import Link from '../link/Link';
+import styles from'./Header.module.css';
+import ProfileButtonRegistration from'./ProfileButtonRegistration';
+import ProfileButtonAuthorization from'./ProfileButtonAuthorization';
+import Logo from'./Logo';
 
 
 const linksHeader = [
@@ -26,8 +27,9 @@ function Header() {
                 {linkHtml}                
             </ul>
         </nav>         
-        <ProfileButtonRegistration/> 
-        <ProfileButtonAuthorization/>              
+        <ProfileButtonRegistration/>                     
+        <ProfileButtonAuthorization/>                     
+        <Logo/>                     
     </header>
     </>
 }

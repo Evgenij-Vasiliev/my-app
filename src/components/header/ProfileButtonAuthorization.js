@@ -1,6 +1,6 @@
 import Link from '../link/Link';
 
-function ProfileButtonAuthorization() {
+function ProfileButtonRegistration() {
     return <Link url="/SignIn" label="Авторизация"/>
 }
-export default ProfileButtonAuthorization;
+export default ProfileButtonRegistration;

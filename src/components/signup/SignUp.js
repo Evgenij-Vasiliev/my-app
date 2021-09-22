@@ -23,7 +23,7 @@ function SignUp() {
         formData[$event.target.name] = $event.target.value;        
     }
     
-    return <div className={styles.signUp}>
+    return <div className={styles.SignUp}>
         <form onSubmit={sendData}>           
             <label>
                 Email:
