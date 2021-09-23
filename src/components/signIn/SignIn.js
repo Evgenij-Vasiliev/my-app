@@ -10,13 +10,11 @@ function SignIn() {
         console.log('send data', formData);
         $event.preventDefault();
 
-        fetch(`http://${dbUrl}/users` , {
-            method: 'Post',
-            body: JSON.stringify(formData),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        });
+        fetch(`http://${dbUrl}/users?email=qqq@ttt.com`)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        }); 
     }
 
     function handleControls($event) {
@@ -34,7 +32,7 @@ function SignIn() {
                 <input type="password" name="password" placeholder="Введите пароль" onChange={handleControls}/>
             </label>  
             <br/>
-            <input  type="submit" value="Создать" />
+            <input  type="submit" value="Вход" />
         </form>         
     </div>;
 }
