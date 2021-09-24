@@ -16,8 +16,15 @@ function SignIn() {
             console.log(data);
             if(data.length > 0) {
                 setSuccessMessage(`Ваш id:${data[0].id}`);
-            }
-        });
+            }            
+        })
+        .catch(error => {
+            console.log('request error', error);
+            throw error;
+        })
+        .finally(() => {
+            
+        })
         $event.preventDefault();
     }
 
