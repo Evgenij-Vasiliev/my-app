@@ -16,20 +16,20 @@ const linksHeader = [
 function Header() {
     let linkHtml = linksHeader.map((value) => {
         return <li key={value[0]}>
-        <Link url={value[0]} label={value[1]}/>        
+        <Link url={value[0]} label={value[1]}/>
         </li>
     })
     return <>
         <header className={styles.header}>
-        <img src={logo} className={styles["App-logo"]} alt="logo" />        
+        <img src={logo} className={styles["App-logo"]} alt="logo" />
         <nav className={styles.menu}>
             <ul>
-                {linkHtml}                
+                {linkHtml}
             </ul>
-        </nav>         
-        <ProfileButtonRegistration/>                     
-        <ProfileButtonAuthorization/>                     
-        <Logo/>                     
+        </nav>
+        <ProfileButtonRegistration/>
+        <ProfileButtonAuthorization/>
+        <Logo/>
     </header>
     </>
 }

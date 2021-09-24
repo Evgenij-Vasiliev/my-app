@@ -4,9 +4,9 @@ import styles from  './Users.module.css';
 function Users() {
 
     const [users, setUsers] = useState([]);
-    const [isLoading, setLoading] = useState(false);    
-    const [isFirst, setFirst] = useState(true);    
-    const [errorMessage, setErrorMessage] = useState();    
+    const [isLoading, setLoading] = useState(false);
+    const [isFirst, setFirst] = useState(true);
+    const [errorMessage, setErrorMessage] = useState();
 
     function getUsers() {
 
@@ -30,40 +30,39 @@ function Users() {
         })
         .finally(() => {
             setLoading(false);
-        })   
+        })
     }
 
-    function removeUser(userId) {       
+    function removeUser(userId) {
         fetch(`http://localhost:4000/users/${userId}`, {
             method: 'DELETE'
         })
         .then(() => {
-            return getUsers();           
+            return getUsers();
         });
     };
         // }).then(() => {
         //     let newUsers = users.filter(user => user.id !== userId) ;
         //     setUsers(newUsers);
         // })
-    
 
     if(isFirst) {
         setFirst(false);
-        getUsers();     
+        getUsers();
     }
 
     let htmlUsers = users.map((user) => {
         return <div key={user.id} className={styles.userRow}>
             <div className={styles.userInfo}>
-            {user.id}:  {user.email} {user.password}                
+            {user.id}:  {user.email} {user.password}
             </div>
 
-            <button className={styles.btn} onClick={() => removeUser(user.id)}>X</button>                
+            <button className={styles.btn} onClick={() => removeUser(user.id)}>X</button>
             </div>
-            }); 
+            });
 
         let htmlButton;
-        
+
         if(!isLoading) {
             htmlButton = <button onClick={getUsers}>Обновить</button>;
         }
@@ -77,7 +76,7 @@ function Users() {
             <div>{errorMessage}</div>
             <h2>Все пользователи</h2>
             {htmlUsers}
-            </div>;   
+            </div>;
 }
 
 export default Users;

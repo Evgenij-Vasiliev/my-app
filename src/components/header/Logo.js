@@ -1,8 +1,8 @@
-// import Link from '../link/Link';
-import logo from '../../logo.svg';
-import styles from './Header.module.css';
+import Link from '../link/Link';
+// import logo from '../../logo.svg';
+// import styles from './Header.module.css';
 
 function Logo() {
-    return <img src={logo} className={styles["App-logo"]} alt="logo" />
+    return <Link url="/home" label="На главную"/>
 }
 export default Logo;
