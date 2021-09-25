@@ -1,6 +1,6 @@
 import styles from './SignIn.module.css';
 import{dbUrl} from '../../config/config'
-import { useState } from 'react/cjs/react.development';
+import { useState } from 'react';
 
 
 function SignIn() {
@@ -10,20 +10,23 @@ function SignIn() {
 
     function sendData($event) {
         console.log('send data', formData);
-        fetch(`${dbUrl}/users?email=rrr@ttt.com&password=nnnn`)
+        fetch(`${dbUrl}/users?email=${formData.email}&password=${formData.password}`)
         .then(response => response.json())
         .then(data => {
             console.log(data);
-            if(data.length > 0) {
+            const id = data?.[0]?.id;
+            if(id) {
                 setSuccessMessage(`Ваш id:${data[0].id}`);
-            }            
+            }else{
+                setSuccessMessage('Вам на регистрацию');
+            }
         })
         .catch(error => {
             console.log('request error', error);
             throw error;
         })
         .finally(() => {
-            
+
         })
         $event.preventDefault();
     }

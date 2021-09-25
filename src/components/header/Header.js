@@ -3,7 +3,7 @@ import Link from '../link/Link';
 import styles from'./Header.module.css';
 import ProfileButtonRegistration from'./ProfileButtonRegistration';
 import ProfileButtonAuthorization from'./ProfileButtonAuthorization';
-import Logo from'./Logo';
+
 
 
 const linksHeader = [
@@ -21,15 +21,16 @@ function Header() {
     })
     return <>
         <header className={styles.header}>
-        <img src={logo} className={styles["App-logo"]} alt="logo" />
+            <a className={styles.logo} href="/">
+            <img src={logo} className={styles["App-logo"]} alt="logo" />
+            </a>
         <nav className={styles.menu}>
             <ul>
                 {linkHtml}
             </ul>
         </nav>
         <ProfileButtonRegistration/>
-        <ProfileButtonAuthorization/>
-        <Logo/>
+        <ProfileButtonAuthorization/>       
     </header>
     </>
 }

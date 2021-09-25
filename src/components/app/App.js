@@ -1,14 +1,13 @@
 // import logo from '../../logo.svg';
 import SignIn from '../signIn/SignIn';
 import SignUp from '../signUp/SignUp';
-import Logo from '../header/Logo';
-import Header from '.././header/Header';
-import Main from '.././main/Main';
-import Home from '.././home/Home';
+import Header from '../header/Header';
+import Main from '../main/Main';
+import Home from '../home/Home';
 import About from '../aboutUs/About';
 import Resources from '../resources/Resources';
 import Contacts from '../contacts/Contacts';
-import Footer from '.././footer/Footer';
+import Footer from '../footer/Footer';
 import styles from './App.module.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
@@ -22,12 +21,12 @@ function App() {
         <Switch>                    
           <Route path="/signUp"><SignUp/></Route>
           <Route path="/signIn"><SignIn/></Route>
-          <Route path="/home"><Main/></Route>          
+          {/* <Route path="/home"><Main/></Route>           */}
           <Route path="/home"><Home/></Route>          
           <Route path="/aboutUs"><About/></Route>          
           <Route path="/resources"><Resources/></Route>
           <Route path="/contacts"><Contacts/></Route>
-          <Route path="/"><Logo/></Route>
+          <Route path="/"><Main/></Route>
         </Switch>
         </div>                
         <Footer/>
