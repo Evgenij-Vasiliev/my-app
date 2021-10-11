@@ -7,18 +7,18 @@ const date = new Date();
 function Timer() {
 
     const[dateTime, setDateTime] = useState({
-        hours: date.getHours(),
-        minutes: date.getMinutes(),
-        seconds: date.getSeconds()
+        hours: date.getHours() < 10 ? '0' + date.getHours(): date.getHours(),
+        minutes: date.getMinutes() < 10 ? '0' + date.getMinutes(): date.getMinutes(),
+        seconds: date.getSeconds() < 10 ? '0' + date.getMinutes(): date.getSeconds()
     });
 
     useEffect(() => {
         const timer = setInterval(() => {
             const date = new Date();
             setDateTime({
-                hours: date.getHours(),
-                minutes: date.getMinutes(),
-                seconds: date.getSeconds()
+                hours: date.getHours() < 10 ? '0' + date.getHours(): date.getHours(),
+                minutes: date.getMinutes() < 10 ? '0' + date.getMinutes(): date.getMinutes(),
+                seconds: date.getSeconds() < 10 ? '0' + date.getSeconds(): date.getSeconds()
             });
         }, 1000);
         return () => clearInterval(timer);
