@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react/cjs/react.development';
 import styles from  './Timer.module.css';
 
-const date = new Date();
-
-
 function Timer() {
 
+    const date = new Date();
+
     const[dateTime, setDateTime] = useState({
-        hours: date.getHours() < 10 ? '0' + date.getHours(): date.getHours(),
-        minutes: date.getMinutes() < 10 ? '0' + date.getMinutes(): date.getMinutes(),
-        seconds: date.getSeconds() < 10 ? '0' + date.getMinutes(): date.getSeconds()
+        hours: date.getHours() ,
+        minutes: date.getMinutes(),
+        seconds: date.getSeconds()
     });
 
     useEffect(() => {
@@ -22,7 +21,7 @@ function Timer() {
             });
         }, 1000);
         return () => clearInterval(timer);
-    }, []);
+    }, [dateTime]);
     return (<div className={styles.clock}>
                 <div>
                     {dateTime.hours}:{dateTime.minutes}:{dateTime.seconds}
