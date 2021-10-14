@@ -1,5 +1,5 @@
 
-import React, { Component } from 'react/cjs/react.development';
+import React, { Component } from 'react';
 import { padZero } from '../../../helper/date';
 import styles from  './Timer2.module.css';
 const date = new Date();

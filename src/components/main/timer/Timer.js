@@ -1,30 +1,44 @@
-import React, { useEffect, useState } from 'react/cjs/react.development';
+/* eslint-disable no-unused-vars */
+import { DateTime } from 'luxon';
+import React, { useEffect, useState } from 'react';
+// import { padZero } from '../../../helper/date';
 import styles from  './Timer.module.css';
 
+// function currenDate() {
+//     const date = new Date();
+//         return ({
+//             hours: padZero(date.getHours()),
+//             minutes: padZero(date.getMinutes()),       
+//             seconds: padZero(date.getSeconds())
+//         });
+// }
+
+function newDate() {
+    return DateTime.now().toLocaleString(DateTime.TIME_24_WITH_SECONDS);
+}
+
+
 function Timer() {
-
-    const date = new Date();
-
-    const[dateTime, setDateTime] = useState({
-        hours: date.getHours() ,
-        minutes: date.getMinutes(),
-        seconds: date.getSeconds()
-    });
-
+    // const[dateTime, setDateTime] = useState(currenDate());
+    const [newDateString, setNewDateString] = useState(newDate());
+    
     useEffect(() => {
-        const timer = setInterval(() => {
-            const date = new Date();
-            setDateTime({
-                hours: date.getHours() < 10 ? '0' + date.getHours(): date.getHours(),
-                minutes: date.getMinutes() < 10 ? '0' + date.getMinutes(): date.getMinutes(),
-                seconds: date.getSeconds() < 10 ? '0' + date.getSeconds(): date.getSeconds()
-            });
-        }, 1000);
-        return () => clearInterval(timer);
-    }, [dateTime]);
+        setTimeout(() => {
+            setNewDateString(newDate());
+        }, 1000)
+    }, [newDateString]);
+
+    // useEffect(() => {
+    //     const timer = setInterval(() => {
+    //         setDateTime(currenDate());
+    //     }, 1000);
+       
+    //     return () => clearInterval(timer);
+    // }, []);
     return (<div className={styles.clock}>
                 <div>
-                    {dateTime.hours}:{dateTime.minutes}:{dateTime.seconds}
+                {newDateString}
+                    {/* {dateTime.hours}:{dateTime.minutes}:{dateTime.seconds} */}
                 </div>
             </div>
     );
