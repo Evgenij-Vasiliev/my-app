@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from './Timer2.module.css';
-import { newDate, currenDate } from '../../../helper/date';
+import { newDate, currenDate } from '../../../../helper/date';
 
 class Timer2 extends Component {
 	state = {

@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import styles from  './Content.module.css'
 
-function Content() {
-
-    console.log('Content is running');
+function Content() {   
 
     const [amount, setAmount] = useState(0);
     
@@ -20,13 +18,13 @@ function Content() {
         </>      
     );
         }else{       
-       
-     content = (                 
-         <>
-             <h2 className={styles.heading}>Контент 2</h2>
+    
+    content = (                 
+        <>
+            <h2 className={styles.heading}>Контент 2</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet optio magnam esse, quo ad eveniet odio perferendis sapiente doloribus distinctio molestias maiores facilis eaque aliquid neque accusantium atque harum accusamus error consequuntur blanditiis itaque quaerat ex praesentium.  Vero inventore nostrum sapiente asperiores optio voluptates iusto maxime doloribus adipisci quos nemo eligendi, laboriosam omnis?</p>            
-         </>      
-     );
+        </>      
+    );
         }
     
 

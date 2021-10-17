@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { newDate } from '../../../helper/date';
+import { newDate } from '../../../../helper/date';
 import styles from './Timer.module.css';
 
 function Timer() {
