@@ -1,61 +1,34 @@
-// import React, { Component } from 'react';
+import React, { useState } from 'react';
+import Clock1 from './clock1/Clock1';
+import Clock12 from './clock2/Clock2';
 import styles from './Clock.module.css';
 
 function Clock() {
 	let clock;
 	const [ changeOfClock, setChangeOfClock ] = useState(true);
 	if (changeOfClock) {
-		clock = function Timer() {
-			const [ newDateString, setNewDateString ] = useState(newDate());
-			useEffect(
-				() => {
-					setTimeout(() => {
-						setNewDateString(newDate());
-					}, 1000);
-				},
-				[ newDateString ]
-			);
-			return (
-				<div className={styles.clock}>
-					<div>{newDateString}</div>
-				</div>
-			);
-		};
+		clock = (
+	<>
+	<div><Clock1/></div>
+	</>
+	)		
 	} else {
-        class Timer2 extends Component {
-	state = {
-		currenDate,
-		newTimeString: newDate()
-	};
-
-	tamerId;
-
-	componentDidMount() {
-		this.tamerId = setInterval(() => {
-			this.setState(currenDate());
-		}, 1000);
-
-		this.intervalId = setInterval(() => {
-			this.setState({
-				newTimeString: newDate()
-			});
-		}, 1000);
-	}
-
-	componentWillUnmount() {
-		clearInterval(this.tamerId);
-		clearInterval(this.intervalId);
-	}
-
-	render() {
-		return <div className={styles.clock}>{this.state.newTimeString}</div>;
-	}
-}
+		clock = (
+			<>
+			<div><Clock12/>
+			</div>
+			</>
+		)		
 	}
 
 	return (
-		<div className={styles.clock}>
-			<div>{clock}</div>
+		<div>
+			{clock}
+			<button className={styles.changeOfClock} 
+			onClick={() => setChangeOfClock(!changeOfClock)}
+			>
+				Clock
+			</button>
 		</div>
 	);
 }

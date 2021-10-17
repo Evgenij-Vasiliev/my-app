@@ -19,3 +19,4 @@ export function currenDate() {
 export function newDate() {
 	return DateTime.now().toLocaleString(DateTime.TIME_24_WITH_SECONDS);
 }
+export default currenDate;

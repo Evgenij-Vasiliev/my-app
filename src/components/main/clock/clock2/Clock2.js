@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import styles from './Timer2.module.css';
+import styles from './Clock2.module.css';
 import { newDate, currenDate } from '../../../../helper/date';
 
-class Timer2 extends Component {
+class Clock2 extends Component {
 	state = {
 		currenDate,
 		newTimeString: newDate()
@@ -31,4 +31,4 @@ class Timer2 extends Component {
 		return <div className={styles.clock}>{this.state.newTimeString}</div>;
 	}
 }
-export default Timer2;
+export default Clock2;

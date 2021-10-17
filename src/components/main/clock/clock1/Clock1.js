@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { newDate } from '../../../../helper/date';
-import styles from './Timer.module.css';
+import styles from './Clock1.module.css';
 
-function Timer() {
+function Clock1() {
 	const [ newDateString, setNewDateString ] = useState(newDate());
 	useEffect(
 		() => {
@@ -18,4 +18,4 @@ function Timer() {
 		</div>
 	);
 }
-export default Timer;
+export default Clock1;
