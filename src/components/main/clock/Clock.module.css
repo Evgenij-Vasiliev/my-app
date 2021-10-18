@@ -1,17 +1,18 @@
-.changeOfClock {    
-    min-width: 100px;
-    height: 50px;
-    border: 5px solid blue;    
-    font-weight: bold;
-    color: blue;
-    background-color: rgb(8, 171, 247);    
-}
-
-.changeOfTimer {
+.changeOfClock {
     width: 100px;
     height: 50px;
     border: 5px solid red;    
     font-weight: bold;
     color: red;
     background-color: rgb(168, 48, 54);    
+        
+}
+
+.changeOfTimer {
+    min-width: 100px;
+    height: 50px;
+    border: 5px solid blue;    
+    font-weight: bold;
+    color: blue;
+    background-color: rgb(8, 171, 247);       
 }

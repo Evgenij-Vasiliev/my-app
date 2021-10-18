@@ -1,9 +1,9 @@
-.clock {
+.startTimer {
     width: 100%;
     /* height: 100%; */
     background-color: rgb(252, 199, 130);
     font-size: 100px;
-    color:red;
+    color:blue;
     display: flex;
     flex-direction: column;
     align-items: center;

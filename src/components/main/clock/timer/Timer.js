@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-// import styles from '../Clock.module.css'
+import styles from '../timer/Timer.module.css';
 
 function Timer() {
     
@@ -18,7 +18,7 @@ function Timer() {
 	);
 	return (
         <>
-		<div>
+		<div className={styles.startTimer}>
 			<div>{startTimer}</div>
 		</div>        
         </>

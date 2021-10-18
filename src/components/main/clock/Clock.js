@@ -9,6 +9,7 @@ import styles from './Clock.module.css';
 function Clock() {
 	let clock;
 	const [ changeOfClock, setChangeOfClock ] = useState(true);
+	const [ isTimerVisible, setIsTimerVisible] = useState(false);
 	if (changeOfClock) {
 		clock = (
 	<>
@@ -33,10 +34,10 @@ function Clock() {
 				Clock
 			</button>
 			<div>
-			{/* <Timer/> */}
+			{isTimerVisible && <Timer/>}
 			</div>
 			<button className={styles.changeOfTimer} 
-        	onClick={() => Timer}
+        	onClick={() => setIsTimerVisible(!isTimerVisible)}
         >
             Start
         </button>			
