@@ -1,7 +1,10 @@
+/* eslint-disable no-undef */
 import React, { useState } from 'react';
 import Clock1 from './clock1/Clock1';
-import Clock12 from './clock2/Clock2';
+import Clock2 from './clock2/Clock2';
+import Timer  from './timer/Timer';
 import styles from './Clock.module.css';
+
 
 function Clock() {
 	let clock;
@@ -15,7 +18,7 @@ function Clock() {
 	} else {
 		clock = (
 			<>
-			<div><Clock12/>
+			<div><Clock2/>
 			</div>
 			</>
 		)		
@@ -29,6 +32,14 @@ function Clock() {
 			>
 				Clock
 			</button>
+			<div>
+			{/* <Timer/> */}
+			</div>
+			<button className={styles.changeOfTimer} 
+        	onClick={() => Timer}
+        >
+            Start
+        </button>			
 		</div>
 	);
 }
