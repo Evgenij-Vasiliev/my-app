@@ -16,6 +16,9 @@ function Timer() {
 		},
 		[ startTimer ]
 	);
+	function stoptTimer() {
+		clearInterval()
+		}
 	return (
         <>
 		<div className={styles.startTimer}>
