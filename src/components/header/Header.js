@@ -9,7 +9,7 @@ import ProfileButtonAuthorization from'./ProfileButtonAuthorization';
 const linksHeader = [
     ['/home', 'Домашняя'],
     ['/aboutUs', 'О нас'],
-    ['/resources', 'Ресурсы'],
+    ['/timer2', 'Timer'],
     ['/contacts', 'Контакты']
 ];
 
