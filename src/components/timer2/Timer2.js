@@ -24,7 +24,8 @@ function Timer2() {
 			<div>{startTimer}</div>
             <button
             className={styles.start}
-            onClick={timer}
+            onClick={timer
+            }
       >
         TIMER
       </button>            
