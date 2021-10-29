@@ -4,7 +4,7 @@ import Header from "../header/Header";
 import Main from "../main/Main";
 import Content from "../content/Content";
 import About from "../aboutUs/About";
-import Resources from "../resources/Resources";
+import Timer2 from "../timer2/Timer2";
 import Contacts from "../contacts/Contacts";
 import Footer from "../footer/Footer";
 import styles from "./App.module.css";
@@ -21,7 +21,7 @@ function App() {
             <Route path="/signIn"><SignIn/></Route>
             <Route path="/home"><Content/></Route>
             <Route path="/aboutUs"><About/></Route>
-            <Route path="/resources"><Resources/></Route>
+            <Route path="/timer2"><Timer2/></Route>
             <Route path="/contacts"><Contacts/></Route>
             <Route path="/"><Main/></Route>
           </Switch>
